@@ -1,0 +1,20 @@
+<div class="quiz-area" ng-show="inProgress">
+</div>
+ 
+<div class="intro" ng-show="!inProgress">
+	<p>Welcome to the QuizApp</p>
+	<button id="startQuiz" ng-click="start()">Start the Quiz</button>
+</div>
+
+<div class="quiz-area" ng-show="inProgress">
+	<div ng-show="!quizOver">
+	</div>
+ 
+	<div ng-show="quizOver">
+		<h2>Quiz is over</h2>
+		<button ng-click="reset()">Play again</button>
+	</div>
+ 
+	<div id="score">
+	</div>
+</div>
